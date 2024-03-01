@@ -1,24 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300;1,500&family=Quicksand:wght@500;600;700&display=swap');
+
+
+:root {
+    --color-white: #FBFAF8; 
+    --color-dark-red: #8C271E;
+    --color-blue: #0000CD;
+    --color-dark-gray: #0F0F0F;
+    --color-orange:#FFA500;
+    --color-senacorange:#f59654;
+    --font-titulo:"MontSerrat", sans-serif; 
+    --font-texto: "QuickSand", sans-serif;
+
+}
+
+*{
+    scroll-behavior: smooth;
+
+}
+
 body {
     background-image: url(/20200130165026443247o.jpg);
     background-size: cover;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: var(--font-titulo);
+    background-color:var(--color-white);
     margin: 0;
     padding: 0;
   }
 
   form {
-    max-width: 300px;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    max-width: 350px;
+    margin: 125px;
+    background-color: lightsteelblue;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 5px 5px black; 
+    }
 
   h2 {
     margin-top: 0;
     text-align: center;
+    font-style:italic;
   }
 
   label {
@@ -32,12 +53,12 @@ body {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
   }
 
-  input[type="submit"] {
+  /* input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -45,11 +66,25 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+  } */
 
-  input[type="submit"]:hover {
+  /* input[type="submit"]:hover {
     background-color: #0056b3;
     transition: ease-in-out;
-  }
+  } */
   
 
+ .button a{
+   font-size: larger;
+   display: flex;
+   text-decoration: none;
+   cursor: pointer;
+   justify-content: center;
+   color: #0F0F0F;
+}
+
+.button a:hover{
+  background-color: var(--color-senacorange);
+  transition: ease-in-out;  
+  border-radius: 10px;
+}
