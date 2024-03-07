@@ -1,90 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300;1,500&family=Quicksand:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-
+/* Cores e fontes gerais no uso do site */
 :root {
-    --color-white: #FBFAF8; 
-    --color-dark-red: #8C271E;
-    --color-blue: #0000CD;
-    --color-dark-gray: #0F0F0F;
-    --color-orange:#FFA500;
-    --color-senacorange:#f59654;
-    --font-titulo:"MontSerrat", sans-serif; 
-    --font-texto: "QuickSand", sans-serif;
-
+  --color-white: #FBFAF8;
+  --color-dark-red: #8C271E;
+  --color-blue: #0000CD;
+  --color-dark-gray: #0F0F0F;
+  --color-orange: #FFA500;
+  --color-senacorange: #f59654;
+  --color-senacblue: #3d51a5;
+  --color-senacgray: #d3cebb;
+  --font-titulo: "MontSerrat", sans-serif;
+  --font-texto: "QuickSand", sans-serif;
+  --font-alternative: 'Poppins', sans-serif;
 }
 
-*{
-    scroll-behavior: smooth;
-
+html {
+  scroll-behavior: smooth;
 }
+
+/* INDEX */
 
 body {
-    background-image: url(/20200130165026443247o.jpg);
-    background-size: cover;
-    font-family: var(--font-titulo);
-    background-color:var(--color-white);
-    margin: 0;
-    padding: 0;
-  }
 
-  form {
-    max-width: 350px;
-    margin: 125px;
-    background-color: lightsteelblue;
-    padding: 25px;
-    border-radius: 30px;
-    box-shadow: 5px 5px black; 
-    }
-
-  h2 {
-    margin-top: 0;
-    text-align: center;
-    font-style:italic;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-  }
-
-  /* input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  } */
-
-  /* input[type="submit"]:hover {
-    background-color: #0056b3;
-    transition: ease-in-out;
-  } */
-  
-
- .button a{
-   font-size: larger;
-   display: flex;
-   text-decoration: none;
-   cursor: pointer;
-   justify-content: center;
-   color: #0F0F0F;
+  /*  Img do Senac, que seria usada, porém optado por seguir com fundo em cores degradê  */
+  /* background-image: url('/20200130165026443247o.jpg');  */
+  background-image: linear-gradient(to right, #d3cebb, #3d51a5, #f59654);
+  font-family: var(--font-titulo);
 }
 
-.button a:hover{
-  background-color: var(--color-senacorange);
-  transition: ease-in-out;  
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  /* margin: 125px; --> Valor de Margin, caso o form fosse lateralizado ao invés de centralizado!*/
+  max-width: 550px;
+  padding: 30px;
+  background-image: linear-gradient(to right, #d3cebb, #3d51a5, #f59654);
+  border-radius: 30px;
+  box-shadow: 5px 5px black;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-style: italic;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+  /* display: block; */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
   border-radius: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+
+.formbutton button{
+  display: block;
+  margin: 0% auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  /* background-color: #007bff; */
+  /* border: 2px solid #007bff; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formbutton:hover {
+  transition: ease-in-out;
+}
+
+/* HomePage */
+
+h2, h3{
+  font-family: var(--font-alternative);
+  font-style: normal;
+}
+
+h4{
+  text-align: center;
+  font-size: larger;
+}
+table {
+  width: 100%;
+  border: 3.5px solid;
+  /* border-collapse: collapse; */
+}
+
+tr {
+background-color: var(--color-senacgray);
+}
+
+th, td {
+  padding: 8px;
+  /* border-bottom: 1px solid #ddd; */
+}
+td{
+  text-align: justify;
+  font-family: var(--font-texto);
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-senacorange);
+}
+a:hover{
+  color: var(--color-blue);
+  cursor: pointer;
+  transition: ease-in-out;
 }

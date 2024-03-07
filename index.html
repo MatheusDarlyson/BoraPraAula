@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<div class="container">
-   
-    <body>
-        
-        <body>
-            <form action="/login" method="post">
-                <h2>Bora pra Aula?</h2>
-                <label for="username">Id do Aluno</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-                <br>
-                <br>
-                <div class="button">
-                    <a href="/home.html">Login</a>
-                </div>
+<body>
 
-                <!-- <input type="submit" value="Login"> -->
-        </form>
-    </body>
-    
-</div>
-    
-    <script src="scripts.js"></script>  
+    <div class="loginForm">
 
+        <form id="login" action="/home.html">
+            <h2>Bora pra Aula?</h2>
+
+            <label for="id_input">Id do Aluno:</label>
+            <input type="text" id="id_input" placeholder="Digite seu ID ..." name="id_input" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Insira sua Senha ..." name="password" required>
+
+
+            <!-- O uso do bloco de código abaixo se trata de outro método de fazer uso do botão,
+                usando a tag <a> -->
+            <!-- <div class="button">
+                <a href="/home.html" type="submit" id="loginButton">Login</a>
+            </div>   -->
+
+            <div class="formbutton">
+                        <button>Enviar</button>
+                    </div>
+    </div>
+    </form>
+
+
+    </form>
+
+    </div>
+
+    <script src="scripts.js"></script>
 
 </body>
+
 </html>
