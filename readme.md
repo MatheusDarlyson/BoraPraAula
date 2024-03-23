@@ -3,16 +3,19 @@ Descrição
 Este webapp foi desenvolvido como parte da Atividade de Coding Mobile da Faculdade Senac - PE. Utiliza as seguintes tecnologias: HTML, CSS e JavaScript.
 
 Versão
-v2.1
+v3.0
 
 Funcionalidades :
 
 O sistema permite realizar "check-in" nas aulas por meio da leitura de QrCodes utilizando um smartphone.
 
+Notas de Atualização (v3.0) :
+
+⚠️ Agora, ao clicar no link de QrCode, a câmera do smartphone é ativada!
+✔️ O site se encontra responsivo e dentro das métricas de PWA.
+📍  O endereço da Faculdade Senac é acessível na página principal.
+
 Próximas Versões:
 
-* Aprimoramento da funcionalidade utilizando JavaScript.
-
-* Vinculação dos links de QrCodes às aulas para redirecionamento à abertura da câmera do smartphone.
-
-* Acrescentar link para os planos de aula de cada disciplina.
+* Usuário poderá selecionar sua turma, e com isso os quadros de horários serão personalizados.
+* Acrescentar link para os calendários e planos de aula de cada disciplina.

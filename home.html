@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3d51a5" />
     <link rel="shortcut icon" href="/palestra.png" type="image/x-icon">
+
 
     <title>Seja Bem-Vindo!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -23,11 +26,11 @@
 
             <table>
                 <tr>
-                    <th>Segunda-Feira <br> <a href="/home.html">QrCode</a></th>
-                    <th>Terça-Feira <br> <a href="/home.html">QrCode</a> </th>
-                    <th>Quarta-Feira <br> <a href="/home.html">QrCode</a> </th>
-                    <th>Quinta-Feira <br> <a href="/home.html">QrCode</a> </th>
-                    <th>Sexta-Feira <br> <a href="/home.html">QrCode</a> </th>
+                    <th>Segunda-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a></th>
+                    <th>Terça-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
+                    <th>Quarta-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
+                    <th>Quinta-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
+                    <th>Sexta-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
             </tr>
             <tr>
                 <td>Eng. Software - LAB 1404 <br> BigData - LAB TEAMS <br> Mobile - LAB TEAMS</td>
@@ -38,8 +41,12 @@
             </tr>
         </table>
         
-        </div>
-
+    </div>
+    
+    <div id="cameraContainer">
+        <video id="cameraFeed" autoplay playsinline muted></video>
+    </div>
+    
     </div>
 
     <script src="scripts.js"></script>

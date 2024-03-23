@@ -72,7 +72,7 @@ input[type="password"] {
 
 .formbutton button {
   display: block;
-  margin: 0% auto;
+  margin: 5% auto;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -96,6 +96,10 @@ input[type="password"] {
   font-size: larger;
 }
 
+  /* Atualização futura */
+/* .roll{
+  margin: 5rem;
+} */
 
 
 /* Adaptações para dispositivos móveis */
@@ -149,4 +153,13 @@ a:hover {
   color: var(--color-blue);
   cursor: pointer;
   transition: ease-in-out;
+}
+
+#cameraContainer {
+  width: 100%;
+  text-align: center;
+}
+#cameraFeed {
+  width: 100%;
+  max-width: 600px;
 }
