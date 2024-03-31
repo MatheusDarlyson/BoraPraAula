@@ -19,3 +19,4 @@ Próximas Versões:
 
 * Usuário poderá selecionar sua turma, e com isso os quadros de horários serão personalizados.
 * Acrescentar link para os calendários e planos de aula de cada disciplina.
+* Aprimorar funcionalidade de leitura e validação de QrCodes
