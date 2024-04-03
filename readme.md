@@ -9,11 +9,15 @@ Funcionalidades :
 
 O sistema permite realizar "check-in" nas aulas por meio da leitura de QrCodes utilizando um smartphone.
 
-Notas de Atualização (v3.0) :
+Notas de Atualização (v3.1) :
 
 ⚠️ Agora, ao clicar no link de QrCode, a câmera do smartphone é ativada!
+
 ✔️ O site se encontra responsivo e dentro das métricas de PWA.
+
 📍  O endereço da Faculdade Senac é acessível na página principal.
+
+⚠️ Nota 02.04.24 - Atualização do quadro de Horários.
 
 Próximas Versões:
 
