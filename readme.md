@@ -9,9 +9,12 @@ Funcionalidades :
 
 O sistema permite realizar "check-in" nas aulas por meio da leitura de QrCodes utilizando um smartphone.
 
-Notas de Atualização (v3.1) :
+Notas de Atualização (v3.2) :
 
 ⚠️ Agora, ao clicar no link de QrCode, a câmera do smartphone é ativada!
+    Funcionalidade do código disponível no seguinte diretório:
+        https://openjavascript.info/2022/12/10/qr-code-scanner-with-html5-qrcode-js/
+        https://www.youtube.com/watch?v=19eo39lqpLM (instruções)
 
 ✔️ O site se encontra responsivo e dentro das métricas de PWA.
 
@@ -21,6 +24,5 @@ Notas de Atualização (v3.1) :
 
 Próximas Versões:
 
+** Acrescentar link para os calendários e planos de aula de cada disciplina.
 * Usuário poderá selecionar sua turma, e com isso os quadros de horários serão personalizados.
-* Acrescentar link para os calendários e planos de aula de cada disciplina.
-* Aprimorar funcionalidade de leitura e validação de QrCodes

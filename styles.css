@@ -154,12 +154,3 @@ a:hover {
   cursor: pointer;
   transition: ease-in-out;
 }
-
-#cameraContainer {
-  width: 100%;
-  text-align: center;
-}
-#cameraFeed {
-  width: 100%;
-  max-width: 600px;
-}

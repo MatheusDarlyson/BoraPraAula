@@ -1,27 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const qrCodeLinks = document.querySelectorAll('.qrCodeLink');
-    const cameraFeed = document.getElementById('cameraFeed');
-
-    qrCodeLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Evita que o link seja seguido
-
-            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function(stream) {
-                    cameraFeed.srcObject = stream;
-                })
-                .catch(function(error) {
-                    console.error('Erro ao acessar a câmera:', error);
-                });
-            } else {
-                console.error('getUserMedia não é suportado neste navegador.');
-            }
-        });
-    });
-});
-
-
 
         // Atualização futura, para escolha de turmas
 // document.getElementById('turma').addEventListener('change', function() {

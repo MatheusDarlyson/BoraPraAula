@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3d51a5" />
     <link rel="shortcut icon" href="/palestra.png" type="image/x-icon">
-
+    
 
     <title>Seja Bem-Vindo!</title>
     <link rel="stylesheet" href="styles.css">
@@ -21,37 +21,36 @@
             <h3>Vejamos seu horário...</h3>
             <h4> TADS026 - NOITE (3º P.) 📚</h4>
         </div>
-        
+
         <div class="tabelahorarios">
 
             <table>
                 <tr>
-                    <th>Segunda-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a></th>
-                    <th>Terça-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
-                    <th>Quarta-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
-                    <th>Quinta-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
-                    <th>Sexta-Feira <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
-                    <th>Sábado <br> <a href="/home.html" class="qrCodeLink" >QrCode</a> </th>
-            </tr>
-            <tr>
-                <td>Eng. Software - LAB 1404 <br> BigData - LAB 1404
-                <td>UdE - 3 - Lab Porto Digital <br> BigData - Remoto</td>
-                <td>Comunicação - LAB 1402 <br> APS - LAB 1402</td>
-                <td>Mobile - LAB 1604 / Híbrido <br>
-                <td>Tech English - 3 - Remoto <br> UX - Remoto</td>
-                <td>Eng. Software - Remoto <br> APS - Remoto <br> Mobile - Remoto</td>
-            </tr>
-        </table>
-        
-    </div>
-    
-    <div id="cameraContainer">
-        <video id="cameraFeed" autoplay playsinline muted></video>
-    </div>
-    
-    </div>
+                    <th>Segunda-Feira <br> <a href="/reader.html" class="qrCodeLink">QrCode</a></th>
+                    <th>Terça-Feira <br> <a href="/reader.html" class="qrCodeLink">QrCode</a> </th>
+                    <th>Quarta-Feira <br> <a href="/reader.html" class="qrCodeLink">QrCode</a> </th>
+                    <th>Quinta-Feira <br> <a href="/reader.html" class="qrCodeLink">QrCode</a> </th>
+                    <th>Sexta-Feira <br> <a href="/reader.html" class="qrCodeLink">QrCode</a> </th>
+                    <th>Sábado <br> <a href="/reader.html" class="qrCodeLink">QrCode</a> </th>
+                </tr>
 
-    <script src="scripts.js"></script>
+
+                <tr>
+                    <td>Eng. Software - LAB 1404 <br> BigData - LAB 1404
+                    <td>UdE - 3 - Lab Porto Digital <br> BigData - Remoto</td>
+                    <td>Comunicação - LAB 1402 <br> APS - LAB 1402</td>
+                    <td>Mobile - LAB 1604 / Híbrido <br>
+                    <td>Tech English - 3 - Remoto <br> UX - Remoto</td>
+                    <td>Eng. Software - Remoto <br> APS - Remoto <br> Mobile - Remoto</td>
+                </tr>
+            </table>
+
+            <div id="reader"></div>
+            <div id="result"></div>
+
+        </div>
+
+        <script src="scripts.js"></script>
 </body>
 
 </html>
