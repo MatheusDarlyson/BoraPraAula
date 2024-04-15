@@ -92,7 +92,6 @@ input[type="password"] {
   display: flex;
   justify-content: center;
   transition: ease-in-out;
-  margin: -65px;
   font-size: larger;
 }
 
@@ -153,4 +152,8 @@ a:hover {
   color: var(--color-blue);
   cursor: pointer;
   transition: ease-in-out;
+}
+
+.roll{
+  overflow-x: auto;
 }
